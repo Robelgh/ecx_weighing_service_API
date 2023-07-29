@@ -9,7 +9,6 @@ namespace Domain
 {
     public class Truck : BaseDomainEntity
     {
-        public Guid Id { get; set; }
         public string Trucktype { get; set; }
     }
 }
