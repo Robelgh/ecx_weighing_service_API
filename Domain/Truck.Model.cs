@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class Truck : BaseDomainEntity
+    public class TruckModel : @base
     {
         public string Trucktype { get; set; }
     }

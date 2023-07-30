@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Application.Agricultural.Validation
 {
-    internal class NotFoundException
+    public class NotFoundException : ApplicationException
     {
+        public NotFoundException(string name, object key) : base($"{name} ({key}) was not found")
+        {
+
+        }
     }
 }

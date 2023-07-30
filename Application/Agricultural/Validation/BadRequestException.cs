@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Application.Agricultural.Validation
 {
-    internal class BadRequestException
+    public class BadRequestException : ApplicationException
     {
+        public BadRequestException(string message) : base(message)
+        {
+
+        }
     }
 }

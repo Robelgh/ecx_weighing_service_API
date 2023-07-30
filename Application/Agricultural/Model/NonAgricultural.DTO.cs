@@ -1,11 +1,10 @@
-﻿using Application.DTO.common;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.DTO
+namespace Application.Agricultural.Model
 {
     public class NonAgriculturalDTO : baseDTO
     {

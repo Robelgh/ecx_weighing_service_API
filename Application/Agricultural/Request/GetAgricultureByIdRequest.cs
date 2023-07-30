@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Agricultural.Handler.Queries
+namespace Application.Agricultural.Request
 {
-    internal class GetAgricultureByIdRequestHandler
+    internal class GetAgricultureByIdRequest
     {
     }
 }

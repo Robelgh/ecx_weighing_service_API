@@ -1,12 +1,32 @@
-﻿using System;
+﻿using Application.Agricultural.Model;
+using Application.Agricultural.Request;
+using Application.IRepository;
+using AutoMapper;
+using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Agricultural.Handler.Queries
+namespace Application.Agricultural.Handler
 {
-    internal class GetAllAgricultureRequestHandler
+    public class GetAllAgricultureHandler : IRequestHandler<GetAllAgricultureRequest , AgriculturalDTO>
     {
+        private IAgriculturalRepository _agriculturalRepository;
+        private IMapper _mapper;
+
+        public GetAllAgricultureHandler(IAgriculturalRepository agriculturalRepository, IMapper mapper)
+        {
+            _agriculturalRepository = agriculturalRepository;
+            _mapper = mapper;
+        }
+
+        public async Task<List<AgriculturalDTO>> Handle(GetAllAgricultureRequest request, CancellationToken cancellationToken)
+        {
+            var agriculture = await _agriculturalRepository.GetAll();
+            return _mapper.Map<List<AgriculturalDTO>>(agriculture);
+        }
+
     }
 }

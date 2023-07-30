@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Persistence.Repository
 {
-    internal interface IGenericRepository
+    internal interface GenericRepository
     {
     }
 }

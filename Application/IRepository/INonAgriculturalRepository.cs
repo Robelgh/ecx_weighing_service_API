@@ -1,14 +1,13 @@
-﻿using Application.Repository;
-using Domain;
+﻿using Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Persistanse.Repository
+namespace Application.IRepository
 {
-    public interface INonAgriculturalRepository : IGenericRepository<nonAgricultural>
+    public interface INonAgriculturalRepository : IGenericRepository<NonAgriculturalModel>
     {
     }
 }

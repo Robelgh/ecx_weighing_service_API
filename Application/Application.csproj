@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -16,13 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Agricultural\Model\" />
-    <Folder Include="Agricultural\Handler\" />
-    <Folder Include="Agricultural\Request\" />
-    <Folder Include="Agricultural\Validation\" />
-    <Folder Include="Features\Agricultural\Handler\Commands\" />
-    <Folder Include="Features\NonAgricultural\" />
-    <Folder Include="Features\Truck\" />
     <Folder Include="Truck\" />
     <Folder Include="NonAgricultural\" />
   </ItemGroup>

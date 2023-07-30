@@ -1,4 +1,5 @@
-﻿using Application.DTO;
+﻿using Application.Agricultural.Model;
+using AutoMapper;
 using Domain;
 using System;
 using System.Collections.Generic;
@@ -8,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace Application
 {
-    public class mappingProfile
+    public class MappingProfile : Profile
     {
         public MappingProfile()
         {
-            CreateMap<Agricultural, AgriculturalDTO>().ReverseMap();
-            CreateMap<nonAgricultural, NonAgriculturalDTO>().ReverseMap();
-            CreateMap<Truck, TruckDTO>().ReverseMap();
+            CreateMap<AgriculturalModel, AgriculturalDTO>().ReverseMap();
+            CreateMap<NonAgriculturalModel, NonAgriculturalDTO>().ReverseMap();
+            CreateMap<TruckModel, TruckDTO>().ReverseMap();
         }
     }
 }
