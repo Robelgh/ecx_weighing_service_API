@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.common
+namespace Application.Agricultural.Validation
 {
-    public abstract class BaseDomainEntity
+    internal class NotFoundException
     {
-        public Guid Id { get; set; }
-   }
+    }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.DTO
+namespace Application.Agricultural.Handler.Queries
 {
-    internal class NonAgricultural
+    internal class GetAllAgricultureRequestHandler
     {
     }
 }

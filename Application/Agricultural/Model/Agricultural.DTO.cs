@@ -1,13 +1,13 @@
-﻿using Domain.common;
+﻿using Application.DTO.common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain
+namespace Application.DTO
 {
-    public class Agricultural : BaseDomainEntity
+    public class AgriculturalDTO : baseDTO
     {
 
         public string Consignment { get; set; }
@@ -32,8 +32,6 @@ namespace Domain
         public double EstimatedWeight { get; set; }
         public double GrossWeight { get; set; }
         public string TicketNumber { get; set; }
-        public  DateTime DateReceived { get; set; }
-
-
+        public DateTime DateReceived { get; set; }
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.DTO
+namespace Application.Agricultural.Handler.Commands
 {
-    internal class Agricultural
+    internal class UpdateAgricultureCommandHandler
     {
     }
 }

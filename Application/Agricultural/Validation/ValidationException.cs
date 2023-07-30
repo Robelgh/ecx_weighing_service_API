@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.DTO.common
+namespace Application.Agricultural.Validation
 {
-    internal interface baseDTO
+    internal class ValidationException
     {
     }
 }

@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace Application.Persistanse.Repository
 {
-    public interface ITruckRepository : IGenericRepository<Truck>
+    public interface IAgriculturalRepository : IGenericRepository<Agricultural>
     {
-
+        Task<Agricultural> 
     }
 }

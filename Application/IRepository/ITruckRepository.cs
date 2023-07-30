@@ -1,4 +1,4 @@
-﻿using Application.Persistanse.contracts;
+﻿using Application.Repository;
 using Domain;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Application.Persistanse.Repository
 {
-    public interface IAgriculturalRepository : IGenericRepository<Agricultural>
+    public interface ITruckRepository : IGenericRepository<Truck>
     {
 
     }
