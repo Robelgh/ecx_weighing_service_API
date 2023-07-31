@@ -1,4 +1,4 @@
-﻿using Application.Agricultural.Model;
+﻿using Application.Model;
 using AutoMapper;
 using Domain;
 using System;

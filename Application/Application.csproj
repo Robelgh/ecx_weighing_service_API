@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.6.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
   </ItemGroup>
 
@@ -16,8 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Truck\" />
-    <Folder Include="NonAgricultural\" />
+    <Folder Include="NonAgricultural\Handler\" />
+    <Folder Include="NonAgricultural\Request\" />
+    <Folder Include="Truck\Handler\" />
+    <Folder Include="Truck\Request\" />
   </ItemGroup>
 
 </Project>

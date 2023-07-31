@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Agricultural.Handler
+namespace Application.Agricultural.Validation.Model.Validation
 {
-    internal class GetAllAgricultureHandler
+    internal class NonAgricultural
     {
     }
 }

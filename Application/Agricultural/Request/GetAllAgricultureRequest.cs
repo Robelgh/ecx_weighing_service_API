@@ -1,4 +1,4 @@
-﻿using Application.Agricultural.Model;
+﻿using Application.Model;
 using MediatR;
 using System;
 using System.Collections.Generic;
