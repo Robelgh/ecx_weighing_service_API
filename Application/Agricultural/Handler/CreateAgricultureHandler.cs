@@ -28,7 +28,7 @@ namespace Application.Agricultural.Handler
         {
             response = new BaseResponse();
             var validator = new AgriculturalDTOValidation();
-            var validationResult = await validator.ValidateAsync(request.AgricultureDTO);
+            var validationResult = await validator.ValidateAsync(request.agricultureDTO);
 
             if (validationResult.IsValid == false)
             {
@@ -37,7 +37,7 @@ namespace Application.Agricultural.Handler
                 response.Errors = validationResult.Errors.Select(x => x.ErrorMessage).ToList();
             }
 
-            var agriculture = _mapper.Map<AgriculturalModel>(request.AgricultureDTO);
+            var agriculture = _mapper.Map<AgriculturalModel>(request.agricultureDTO);
             var data = await _agriculturalRepository.Add(agriculture);
             response.Success = true;
             response.Message = "Creation Successfull";

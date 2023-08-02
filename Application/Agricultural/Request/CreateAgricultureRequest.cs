@@ -10,6 +10,6 @@ namespace Application.Agricultural.Request
 {
     public class CreateAgricultureRequest : IRequest<BaseResponse>
     {
-        public AgriculturalDTO AgricultureDTO { get; set; }
+        public AgriculturalDTO agricultureDTO { get; set; }
     }
 }

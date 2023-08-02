@@ -9,10 +9,14 @@ namespace Application.IRepository
     public interface IGenericRepository<T> where T : class
     {
         Task<T> GetById(Guid Id);
-        Task<IReadOnlyList<T>> GetAll();
+        Task<IEnumerable<T>> GetAll();
         Task<T> Add(T entity);
-        Task<T> Update(T entity);
+        Task Update(T entity);
         Task Delete(T entity);
+        Task<bool> Exists(Guid id);
 
     }
 }
+
+
+  
