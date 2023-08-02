@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Persistence.Repository
+namespace Persistence
 {
-    public interface NonAgriculturalRepository
+    public class DbContextFactory
     {
     }
 }

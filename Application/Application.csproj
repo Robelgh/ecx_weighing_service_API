@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -14,13 +14,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NonAgricultural\Handler\" />
-    <Folder Include="NonAgricultural\Request\" />
-    <Folder Include="Truck\Handler\" />
-    <Folder Include="Truck\Request\" />
   </ItemGroup>
 
 </Project>

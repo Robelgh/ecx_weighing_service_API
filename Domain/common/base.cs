@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.common
 {
-    public abstract class @base
+    public abstract class baseModel
     {
         public Guid Id { get; set; }
         public string CreatedBy { get; set; }

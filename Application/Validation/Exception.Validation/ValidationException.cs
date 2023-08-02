@@ -1,18 +1,18 @@
 ﻿using System;
+using FluentValidation.Results;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Agricultural.Validation
+namespace Application.Validation.Exception.Validation
 {
     public class ValidationException : ApplicationException
     {
         public List<string> Errors { get; set; } = new List<string>();
-        public ValidationException(ValidationResult validationResult)
+        public ValidationException(ValidationResult _validationResult)
         {
-            foreach (var error in validationResult.Errors)
+            foreach (var error in _validationResult.Errors)
             {
                 Errors.Add(error.ErrorMessage);
             }

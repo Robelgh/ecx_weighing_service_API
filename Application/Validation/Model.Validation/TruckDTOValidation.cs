@@ -1,12 +1,21 @@
-﻿using System;
+﻿using Application.Model;
+using FluentValidation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Agricultural.Validation.Model.Validation
+namespace Application.Validation.Model.Validation
 {
-    internal class Truck
+    public class TruckDTOValidation : AbstractValidator<TruckDTO>
     {
+        public TruckDTOValidation()
+        {
+            RuleFor(p => p.Trucktype)
+                .NotEmpty().WithMessage("{PropertyName} is requiered.")
+                .NotNull();
+
+        }
     }
 }

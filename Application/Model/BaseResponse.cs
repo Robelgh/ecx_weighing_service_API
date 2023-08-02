@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Agricultural.Response
+namespace Application.Model
 {
-    internal class BaseResponse
+    public class BaseResponse
     {
+        public int Id { get; set; }
+        public bool Success { get; set; } = true;
+        public string Message { get; set; }
+        public List<string> Errors { get; set; }
+        public string Status { get; set; }
     }
 }

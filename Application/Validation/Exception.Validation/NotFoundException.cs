@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Agricultural.Validation
+namespace Application.Validation.Exception.Validation
 {
     public class NotFoundException : ApplicationException
     {

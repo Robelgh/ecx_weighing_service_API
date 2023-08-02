@@ -24,7 +24,7 @@ namespace Application.Agricultural.Handler
         public async Task<AgriculturalDTO> Handle(GetAgricultureByIdRequest request, CancellationToken cancellationToken)
         {
             var agriculture = await _agriculturalRepository.GetById(request.Id);
-            return _mapper.Map<AgriculturalDTO>(request);
+            return _mapper.Map<AgriculturalDTO>(agriculture);
         }
     }
 }
