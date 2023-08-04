@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Application.Agricultural.Handler
 {
-    public class UpdateAgricultureHandler : IRequestHandler<UpdateAgricultureRequest>
+    public class UpdateAgricultureHandler : IRequestHandler<UpdateAgricultureRequest, Unit>
     {
         private IAgriculturalRepository _agriculturalRepository;
         private IMapper _mapper;
@@ -32,5 +32,7 @@ namespace Application.Agricultural.Handler
             await _agriculturalRepository.Update(agriculture);
             return Unit.Value;
         }
+
+    
     }
 }

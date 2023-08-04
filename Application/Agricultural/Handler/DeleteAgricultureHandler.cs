@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Application.Agricultural.Handler
 {
-    public class DeleteAgricultureHandler : IRequestHandler<DeleteAgricultureRequest>
+    public class DeleteAgricultureHandler : IRequestHandler<DeleteAgricultureRequest,Unit>
     {
         private IAgriculturalRepository _agriculturalRepository;
         private IMapper _mapper;

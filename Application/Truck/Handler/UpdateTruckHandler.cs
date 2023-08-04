@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace Application.Truck.Handler
 {
-    public class UpdateTruckHandler : IRequestHandler<UpdateTruckRequest>
+    public class UpdateTruckHandler : IRequestHandler<UpdateTruckRequest,Unit>
     {
         private ITruckRepository _truckRepository;
         private IMapper _mapper;

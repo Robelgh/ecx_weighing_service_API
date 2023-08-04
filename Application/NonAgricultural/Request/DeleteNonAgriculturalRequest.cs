@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.NonAgricultural.Request
 {
-    public class DeleteNonAgriculturalRequest : IRequest
+    public class DeleteNonAgriculturalRequest : IRequest<Unit>
     {
         public Guid Id { get; set; }
     }

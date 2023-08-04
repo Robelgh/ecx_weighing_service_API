@@ -25,7 +25,7 @@ namespace API.Controllers
         }
 
         // GET api/<DepartmentController>/5
-        [HttpGet("{id}")]
+        [HttpGet("{Id}")]
         public async Task<ActionResult<List<AgriculturalDTO>>> Get(Guid Id)
         {
             var agriculture = await _mediator.Send(new GetAgricultureByIdRequest { Id = Id });
@@ -53,7 +53,7 @@ namespace API.Controllers
         }
 
         // DELETE api/<DepartmentController>/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{Id}")]
         public async Task<ActionResult> Delete(Guid Id)
         {
             var command = new DeleteAgricultureRequest { Id = Id };

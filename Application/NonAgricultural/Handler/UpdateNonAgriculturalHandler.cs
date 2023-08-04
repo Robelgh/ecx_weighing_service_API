@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace Application.NonAgricultural.Handler
 {
-    public class UpdateNonAgriculturalHandler : IRequestHandler<UpdateNonAgriculturalRequest>
+    public class UpdateNonAgriculturalHandler : IRequestHandler<UpdateNonAgriculturalRequest,Unit>
     {
         private INonAgriculturalRepository _nonagriculturalRepository;
         private IMapper _mapper;

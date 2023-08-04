@@ -36,6 +36,7 @@ namespace Application.Agricultural.Handler
                 response.Message = "Creation Faild";
                 response.Errors = validationResult.Errors.Select(x => x.ErrorMessage).ToList();
             }
+             request.agricultureDTO.Id = Guid.NewGuid();
 
             var agriculture = _mapper.Map<AgriculturalModel>(request.agricultureDTO);
             var data = await _agriculturalRepository.Add(agriculture);

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Application.Truck.Handler
 {
-    public class DeleteTruckHandler : IRequestHandler<DeleteTruckRequest>
+    public class DeleteTruckHandler : IRequestHandler<DeleteTruckRequest,Unit>
     {
         private ITruckRepository _truckRepository;
         private IMapper _mapper;

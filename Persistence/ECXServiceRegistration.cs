@@ -13,6 +13,8 @@ namespace Persistence
             services.AddDbContext<ECXDBContext>(options => options.UseSqlServer(configuration.GetConnectionString("ECXWeighConnectionString")));
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IAgriculturalRepository,AgriculturalRepository>();
+            services.AddScoped<INonAgriculturalRepository, NonAgriculturalRepository>();
+            services.AddScoped<ITruckRepository, TruckRepository>();
 
             return services;
         }

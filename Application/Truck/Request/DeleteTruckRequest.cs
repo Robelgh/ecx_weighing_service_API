@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.Truck.Request
 {
-    public class DeleteTruckRequest : IRequest
+    public class DeleteTruckRequest : IRequest<Unit>
     {
         public Guid Id { get; set; }
 }

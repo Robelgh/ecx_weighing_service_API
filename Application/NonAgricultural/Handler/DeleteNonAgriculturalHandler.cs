@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Application.NonAgricultural.Handler
 {
-    public class DeleteNonAgriculturalHandler : IRequestHandler<DeleteNonAgriculturalRequest>
+    public class DeleteNonAgriculturalHandler : IRequestHandler<DeleteNonAgriculturalRequest,Unit>
     {
         private INonAgriculturalRepository _nonagriculturalRepository;
         private IMapper _mapper;
